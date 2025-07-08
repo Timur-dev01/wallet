@@ -1,9 +1,10 @@
 import axios from "axios";
-import { renderLayout } from '../src/layout/layout.js'
+import { renderLayout } from "../src/layout/layout.js";
 
 const pages = [
   {
     path: "/",
+    withHeader: true,
     loadHtml: async (app) => {
       const response = await axios.get("/src/pages/home.html");
 
@@ -18,6 +19,7 @@ const pages = [
   },
   {
     path: "/signin",
+    withHeader: false,
     loadHtml: async (app) => {
       const response = await axios.get("/src/pages/signin.html");
 
@@ -32,6 +34,7 @@ const pages = [
   },
   {
     path: "/signup",
+    withHeader: false,
     loadHtml: async (app) => {
       const response = await axios.get("/src/pages/signup.html");
 
@@ -46,6 +49,7 @@ const pages = [
   },
   {
     path: "/transaction",
+    withHeader: true,
     loadHtml: async (app) => {
       const response = await axios.get("/src/pages/transaction.html");
 
@@ -60,6 +64,7 @@ const pages = [
   },
   {
     path: "/wallets",
+    withHeader: true,
     loadHtml: async (app) => {
       const response = await axios.get("/src/pages/wallets.html");
 
@@ -74,6 +79,7 @@ const pages = [
   },
   {
     path: "/walletadd",
+    withHeader: false,
     loadHtml: async (app) => {
       const response = await axios.get("/src/pages/walletadd.html");
 
@@ -88,6 +94,7 @@ const pages = [
   },
   {
     path: "/transactionadd",
+    withHeader: false,
     loadHtml: async (app) => {
       const response = await axios.get("/src/pages/transactionadd.html");
 
@@ -99,7 +106,7 @@ const pages = [
     loadScripts: async () => {
       await import("../src/scripts/transactionadd.js");
     },
-  }
+  },
 ];
 
 async function router() {
@@ -111,22 +118,22 @@ async function router() {
     return await loadNotFoundPage(app);
   }
 
-  app.style.opacity = '0';
+  app.style.opacity = "0";
 
-  await new Promise(resolve => setTimeout(resolve, 500));
+  await new Promise((resolve) => setTimeout(resolve, 500));
 
   await page.loadStyles();
   await page.loadHtml(app);
   await page.loadScripts();
-  renderLayout();
 
-  app.style.opacity = '0';
+  if (page.withHeader) {
+    renderLayout();
+  }
+  app.style.opacity = "0";
 
   requestAnimationFrame(() => {
-    app.style.opacity = '1'; 
+    app.style.opacity = "1";
   });
 }
 
-
 router();
-
