@@ -123,7 +123,7 @@ async function router() {
   app.style.opacity = '0';
 
   requestAnimationFrame(() => {
-    app.style.opacity = '1'; // и плавно проявляем
+    app.style.opacity = '1'; 
   });
 }
 
