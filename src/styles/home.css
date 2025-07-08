@@ -14,18 +14,18 @@
   margin: 0 auto;
 }
 
- h1 {
+h1 {
   font-weight: 700;
   font-size: 48px;
   color: #000000;
   margin-top: 44px;
 }
 
-main{
+main {
   margin-bottom: 30px;
 }
 
- .mail {
+.mail {
   font-weight: 700;
   font-size: 18px;
   color: #0047ff;
