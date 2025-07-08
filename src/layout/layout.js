@@ -27,7 +27,7 @@ function renderHeader() {
   link.href = '#'
   link.textContent = 'alexadams@google.com'
   const image = document.createElement('img')
-  image.src = '../../public/images/log-out.svg'
+  image.src = '/public/images/log-out.svg'
 
   rightDiv.append(link,image)
 
