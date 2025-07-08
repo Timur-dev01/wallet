@@ -1,0 +1,37 @@
+@import url(../styles/default.css);
+.header {
+  background: #f0f0f0;
+  height: 70px;
+  padding: 25px 0 26px;
+}
+
+.head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header a {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  color: #000000;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 21px;
+}
+
+.right-div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 19px;
+}
+#app {
+  opacity: 1;
+  transition: opacity 0.5s ease; 
+}

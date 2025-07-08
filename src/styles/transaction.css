@@ -1,0 +1,27 @@
+@import url(./fonts.css);
+@import url(./default.css);
+.mail {
+  margin-bottom: 60px;
+}
+
+.btn1 {
+  width: 438px;
+  height: 56px;
+  border: none;
+  border-radius: 10px;
+  background-color: #0047ff;
+  font-family: "Gilroy";
+  font-weight: 600;
+  font-style: Semibold;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #ffffff;
+  margin: 30px 0 30px;
+}
+
+.btn1:hover {
+  color: #fff;
+  background-color: #060761;
+  transition: 0.3s;
+}

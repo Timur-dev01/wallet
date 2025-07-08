@@ -1,0 +1,96 @@
+@import url(./fonts.css);
+* {
+  font-family: "Gilroy";
+}
+.registration-container {
+  margin: 100px auto;
+  padding: 40px;
+  border-radius: 12px;
+  width: 80%;
+  max-width: 512px;
+}
+
+.title {
+  font-family: "Gilroy";
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 40px;
+  text-align: center;
+  line-height: 100%;
+  letter-spacing: 0%;
+  white-space: nowrap;
+}
+
+form {
+  margin-top: 32px;
+}
+
+.form-group {
+  margin-bottom: 16px;
+}
+
+.form-input {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1px solid #000000;
+  border-radius: 8px;
+  font-size: 16px;
+  color: #374151;
+  background-color: #ffffff;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.form-input::placeholder {
+  font-family: "Gilroy";
+  font-weight: 600;
+  font-style: Semibold;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #000000;
+}
+
+.continue-button {
+  width: 100%;
+  padding: 12px 16px;
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.2s ease;
+  margin-top: 8px;
+}
+
+.continue-button:hover {
+  background-color: #1d4ed8;
+}
+
+.continue-button:active {
+  background-color: #1e40af;
+}
+
+@media (max-width: 480px) {
+  .registration-container {
+    padding: 24px;
+    margin: 16px;
+  }
+
+  .title {
+    font-size: 24px;
+    margin-bottom: 24px;
+    white-space: nowrap;
+  }
+}
+
+.invalid {
+  border-color: red;
+}

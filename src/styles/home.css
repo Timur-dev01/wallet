@@ -1,0 +1,105 @@
+@import url(./fonts.css);
+@import url(./default.css);
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Gilroy";
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+ h1 {
+  font-weight: 700;
+  font-size: 48px;
+  color: #000000;
+  margin-top: 44px;
+}
+
+main{
+  margin-bottom: 30px;
+}
+
+ .mail {
+  font-weight: 700;
+  font-size: 18px;
+  color: #0047ff;
+  text-decoration: none;
+  display: block;
+  margin-top: 11px;
+}
+
+.main h1 {
+  font-weight: 700;
+  font-size: 48px;
+
+  color: #000000;
+  margin-top: 44px;
+}
+
+.main .mail {
+  font-weight: 700;
+  font-size: 18px;
+  color: #0047ff;
+  text-decoration: none;
+  display: block;
+  margin-top: 11px;
+}
+
+.main h2 {
+  font-weight: 500;
+  font-size: 24px;
+  color: #000000;
+}
+
+.wallets-section,
+.transactions-section {
+  margin-top: 74px;
+}
+
+main a {
+  font-weight: 600;
+  font-size: 16px;
+  text-decoration: underline;
+  text-decoration-style: solid;
+  text-decoration-offset: 0%;
+  text-decoration-thickness: 0%;
+  color: #0047ff;
+}
+
+.wallets {
+  margin: 21px 0 21px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.card {
+  width: 300px;
+  height: 180px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #6a00b6, #c25ea9);
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card .logo {
+  font-size: 22px;
+}
+
+.card .card-currency {
+  font-size: 14px;
+  align-self: flex-start;
+}
+
+.transactions {
+  margin: 32px 0 21px;
+}
