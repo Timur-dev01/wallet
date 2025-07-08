@@ -1,0 +1,42 @@
+{
+  "users":[
+    {
+      "id":"1",
+      "name":"Alex",
+      "surname":"Adams"
+    },
+    {
+      "id":"2",
+      "name":"Stefano",
+      "surname":"Visconti"
+    }
+  ],
+  "wallets":[
+    {
+      "id":"1",
+      "logo_name":"Visa",
+      "currency":"USD"
+    },
+    {
+      "id":"2",
+      "logo_name":"MasterCard",
+      "currency":"EUR"
+    }
+  ],
+  "transactions":[
+    {
+      "id":"1",
+      "logo_name":"MasterCard",
+      "categories": "Products",
+      "tranzaction":"1000",
+      "when":"2 days ago"
+    },
+    {
+      "id":"2",
+      "logo_name":"Visa",
+      "categories": "Cars",
+      "tranzaction":"100000",
+      "when":"4 month ago"
+    }
+  ]
+}
