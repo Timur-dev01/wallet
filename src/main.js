@@ -111,22 +111,17 @@ async function router() {
     return await loadNotFoundPage(app);
   }
 
-  // 1) Плавно скрываем старое
   app.style.opacity = '0';
 
-  // 2) Дадим браузеру время сделать fade-out
   await new Promise(resolve => setTimeout(resolve, 500));
 
-  // 3) Грузим новое
   await page.loadStyles();
   await page.loadHtml(app);
   await page.loadScripts();
   renderLayout();
 
-  // 4) Новый контент сразу появляется с opacity: 0
   app.style.opacity = '0';
 
-  // 5) Дадим браузеру один тик (чтобы style применился)
   requestAnimationFrame(() => {
     app.style.opacity = '1'; // и плавно проявляем
   });
@@ -135,6 +130,3 @@ async function router() {
 
 router();
 
-
-axios.get('')
-.then ((res) => 
